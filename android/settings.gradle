@@ -1,0 +1,3 @@
+rootProject.name = 'AMAR2000ReactNative'
+
+include ':app'
