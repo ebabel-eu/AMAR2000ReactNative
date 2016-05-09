@@ -3,40 +3,44 @@ import React, {
   Component,
   StyleSheet,
   Text,
-  View
+  View,
+  ListView,
 } from 'react-native';
 
 class AMAR2000ReactNative extends Component {
+  constructor() {
+    super();
+
+    const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
+    const dataSource = ds.cloneWithRows(['Blue Area', 'Large Area', 'Metro Side', 'Meeting Room A', 'Meeting Room B', 'Reception']);
+    
+    this.state = {
+      dataSource,
+    };
+  }
+  
+  _renderRow(rowData) {
+    return (
+      <Text
+        style={styles.row}>
+        {rowData}
+      </Text>
+    );
+  }
+
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          AMAR2000
-        </Text>
-        <Text style={styles.instructions}>
-          Everything is okay
-        </Text>
-      </View>
+      <ListView
+        dataSource={this.state.dataSource}
+        renderRow={this._renderRow}
+      />
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
+  row: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#FFFFFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
 
