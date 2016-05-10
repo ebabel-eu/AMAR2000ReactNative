@@ -13,23 +13,23 @@ class AMAR2000ReactNative extends Component {
 
     const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     const dataSource = ds.cloneWithRows([
-      'Blue Area', 
-      'Large Area', 
-      'Metro Side', 
-      'Meeting Room A', 
-      'Meeting Room B', 
+      'Blue Area',
+      'Large Area',
+      'Metro Side',
+      'Meeting Room A',
+      'Meeting Room B',
       'Reception'
     ]); // todo: shouldn't this data come from the Web API?
-    
+
     this.state = {
       dataSource,
     };
   }
-  
+
   _renderRow(rowData) {
     return (
       <Text
-        style={styles.row}>
+        style={styles.item}>
         {rowData}
       </Text>
     );
@@ -40,10 +40,10 @@ class AMAR2000ReactNative extends Component {
       <View style={styles.container}>
         <Text style={styles.logo}>AMAR2000</Text>
         <ListView
-          style={styles.listView}
+          style={styles.list}
           dataSource={this.state.dataSource}
           renderRow={this._renderRow}
-        />
+          />
       </View>
     );
   }
@@ -60,19 +60,18 @@ const styles = StyleSheet.create({
     flex: 2,
     backgroundColor: '#fcf',
     flexDirection: 'row',
-    height: 44,
   },
-  listView: {
-    flex: 2,
+  list: {
+    flex: 1,
     flexDirection: 'row',
   },
-  row: {
-    flex: 2,
-    fontSize: baseFontSize,
-    backgroundColor: '#ccc',
-    height: 44,
-    marginBottom: 22,
-    textAlignVertical: 'center',
+  item: {
+    flex: 1,
+    flexDirection: 'row',
+    backgroundColor: '#FFFFFF',
+    borderBottomColor: '#AAAAAA',
+    borderBottomWidth: 2,
+    padding: 5,
   },
 });
 
