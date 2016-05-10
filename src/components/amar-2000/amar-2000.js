@@ -38,8 +38,10 @@ export default class AMAR2000ReactNative extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.logo}>
-          AMAR2000
+        <Text>
+          <Text style={styles.logo}>
+            AMAR2000
+          </Text>
           <Text style={styles.slogan}>
             everything is okay
           </Text>
