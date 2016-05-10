@@ -38,14 +38,14 @@ export default class AMAR2000ReactNative extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>
+        <View>
           <Text style={styles.logo}>
             AMAR2000
           </Text>
           <Text style={styles.slogan}>
             everything is okay
           </Text>
-        </Text>
+        </View>
         <ListView
           style={styles.list}
           dataSource={this.state.dataSource}
@@ -61,21 +61,25 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    paddingTop: 30,
+    paddingTop: baseFontSize * 2,
   },
   logo: {
     flex: 1,
-    backgroundColor: '#fcf',
     flexDirection: 'row',
-    fontSize: baseFontSize * 2,
-    lineHeight: baseFontSize * 3,
+    fontSize: baseFontSize * 4,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    padding: baseFontSize / 2,
   },
   slogan: {
     flex: 1,
-    backgroundColor: '#cfc',
     flexDirection: 'row',
-    fontSize: baseFontSize,
-    lineHeight: baseFontSize * 1.5,
+    fontSize: baseFontSize * 1.5,
+    lineHeight: baseFontSize,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+    padding: baseFontSize / 2,
+    marginBottom: baseFontSize * 2,
   },
   list: {
     flex: 1,
@@ -87,6 +91,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#f00',
     borderBottomColor: '#00f',
     borderBottomWidth: 2,
-    padding: 5,
+    padding: baseFontSize / 3,
   },
 });
