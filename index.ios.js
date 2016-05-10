@@ -38,7 +38,12 @@ class AMAR2000ReactNative extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.logo}>AMAR2000</Text>
+        <Text style={styles.logo}>
+          AMAR2000
+          <Text style={styles.slogan}>
+            everything is okay
+          </Text>
+        </Text>
         <ListView
           style={styles.list}
           dataSource={this.state.dataSource}
@@ -57,9 +62,18 @@ const styles = StyleSheet.create({
     paddingTop: 30,
   },
   logo: {
-    flex: 2,
+    flex: 1,
     backgroundColor: '#fcf',
     flexDirection: 'row',
+    fontSize: baseFontSize * 2,
+    lineHeight: baseFontSize * 3,
+  },
+  slogan: {
+    flex: 1,
+    backgroundColor: '#cfc',
+    flexDirection: 'row',
+    fontSize: baseFontSize,
+    lineHeight: baseFontSize * 1.5,
   },
   list: {
     flex: 1,
