@@ -9,7 +9,8 @@ export default StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     paddingTop: _.SIZE * 2,
-    backgroundColor: 'beige',
+    backgroundColor: _.COLOURS.BACKGROUND.LIGHT,
+    color: _.COLOURS.TEXT.DARK,
   },
   logo: {
     flex: 1,
@@ -36,7 +37,7 @@ export default StyleSheet.create({
   item: {
     flex: 1,
     flexDirection: 'row',
-    backgroundColor: 'lime',
+    backgroundColor: _.COLOURS.BACKGROUND.DARK,
     padding: _.SIZE / 3,
     marginBottom: 10,
   },

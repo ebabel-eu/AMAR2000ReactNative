@@ -11,3 +11,14 @@ export const ROOMS = [
   'Meeting Room B',
   'Reception'
 ];
+
+export const COLOURS = {
+  BACKGROUND: {
+    LIGHT: 'beige',
+    DARK: 'lime',
+  },
+  TEXT: {
+    LIGHT: 'white',
+    DARK: '#333',
+  },
+};
