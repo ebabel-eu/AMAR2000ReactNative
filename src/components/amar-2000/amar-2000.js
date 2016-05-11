@@ -1,8 +1,9 @@
-'use strict';
-
 import React, {
-  AppRegistry,
   Component,
+} from 'react';
+
+import {
+  AppRegistry,
   Text,
   View,
   ListView,
