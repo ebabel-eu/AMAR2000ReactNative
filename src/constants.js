@@ -15,10 +15,12 @@ export const ROOMS = [
 export const COLOURS = {
   BACKGROUND: {
     LIGHT: 'beige',
-    DARK: 'lime',
+    DARK: '#996633',
   },
   TEXT: {
-    LIGHT: 'white',
-    DARK: '#333',
+    LIGHT: '#fefef0',
+    DARK: '#595955',
+    DARKER: '#393933',
+    DARKEST: '#191911'
   },
 };

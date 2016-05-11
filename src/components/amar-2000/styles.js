@@ -10,7 +10,6 @@ export default StyleSheet.create({
     alignItems: 'center',
     paddingTop: _.SIZE * 2,
     backgroundColor: _.COLOURS.BACKGROUND.LIGHT,
-    color: _.COLOURS.TEXT.DARK,
   },
   logo: {
     flex: 1,
@@ -19,6 +18,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     textAlignVertical: 'center',
     padding: _.SIZE / 2,
+    color: _.COLOURS.TEXT.DARK,
   },
   slogan: {
     flex: 1,
@@ -29,10 +29,12 @@ export default StyleSheet.create({
     textAlignVertical: 'center',
     padding: _.SIZE / 2,
     marginBottom: _.SIZE * 2,
+    color: _.COLOURS.TEXT.DARKER,
   },
   list: {
     flex: 1,
     flexDirection: 'row',
+    marginBottom: _.SIZE * 3,
   },
   item: {
     flex: 1,
@@ -40,5 +42,6 @@ export default StyleSheet.create({
     backgroundColor: _.COLOURS.BACKGROUND.DARK,
     padding: _.SIZE / 3,
     marginBottom: 10,
+    color: _.COLOURS.TEXT.LIGHT,
   },
 });
