@@ -18,7 +18,9 @@
   "homepage": "https://github.com/ebabel-eu/AMAR2000ReactNative",
   "author": "Nadjib Amar <nadjib.amar@efocus.nl> (http://efocus.nl)",
   "contributors": [
-    "Vincent van den Heuvel <vincent.vanden.heuvel@efocus.nl> (http://efocus.nl)"
+    "Vincent van den Heuvel <vincent.vanden.heuvel@efocus.nl> (http://efocus.nl)",
+    "Wessel Terpstra <wessel.terpstra@efocus.nl> (http://efocus.nl)",
+    "Alex Schouls <alex.schouls@efocus.nl> (http://efocus.nl)"
   ],
   "license": "CC0-1.0",
   "dependencies": {
