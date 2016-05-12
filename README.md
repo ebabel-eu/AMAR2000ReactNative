@@ -52,4 +52,4 @@ ext install wallaby
 ## Release history
 
 ### v1.0.0 First release for iOS (future release)
-- initial mvp version for iOS, Android will come later
+- initial Hackaton version for iOS, Android will come later
