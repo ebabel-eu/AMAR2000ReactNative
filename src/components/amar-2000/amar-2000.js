@@ -13,15 +13,13 @@ import styles from './styles';
 import * as _ from '../../constants';
 
 export default class AMAR2000ReactNative extends Component {
-  constructor() {
-    super();
-
+  componentWillMount() {
     const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     const dataSource = ds.cloneWithRows(_.ROOMS);
 
-    this.state = {
+    this.setState({
       dataSource,
-    };
+    });
   }
 
   _renderRow(rowData) {
