@@ -9,7 +9,7 @@ export const ROOMS = [
   'Metro Side',
   'Meeting Room A',
   'Meeting Room B',
-  'Reception'
+  'Reception',
 ];
 
 export const COLOURS = {
@@ -21,6 +21,6 @@ export const COLOURS = {
     LIGHT: '#fefef0',
     DARK: '#595955',
     DARKER: '#393933',
-    DARKEST: '#191911'
+    DARKEST: '#191911',
   },
 };
