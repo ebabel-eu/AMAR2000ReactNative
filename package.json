@@ -1,10 +1,26 @@
 {
   "name": "amar2000reactnative",
-  "version": "1.0.0",
   "private": true,
+  "version": "1.0.0",
+  "description": "iOS and Android app to monitor the environment data of an office and alerts when parameters enter unhealthy ranges.",
+  "main": "index.ios.js",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ebabel-eu/AMAR2000ReactNative.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ebabel-eu/AMAR2000ReactNative/issues",
+    "email": "hello@ebabel.eu"
+  },
+  "homepage": "https://github.com/ebabel-eu/AMAR2000ReactNative",
+  "author": "Nadjib Amar <nadjib.amar@efocus.nl> (http://efocus.nl)",
+  "contributors": [
+    "Vincent van den Heuvel <vincent.vanden.heuvel@efocus.nl> (http://efocus.nl)"
+  ],
+  "license": "CC0-1.0",
   "dependencies": {
     "react": "0.14.8",
     "react-native": "0.25.1"
