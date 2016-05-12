@@ -1,0 +1,9 @@
+android
+ios
+src/**/*.spec.js
+wallaby.js
+package.json
+jsconfig.json
+.eslintrc
+.babelrc
+node_modules
