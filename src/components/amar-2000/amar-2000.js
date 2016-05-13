@@ -3,7 +3,6 @@ import React, {
 } from 'react';
 
 import {
-  AppRegistry,
   Text,
   View,
   ListView,
@@ -22,10 +21,11 @@ export default class AMAR2000ReactNative extends Component {
     });
   }
 
-  _renderRow(rowData) {
+  renderRow(rowData) {
     return (
       <Text
-        style={styles.item}>
+        style={styles.item}
+      >
         {rowData}
       </Text>
     );
@@ -45,8 +45,8 @@ export default class AMAR2000ReactNative extends Component {
         <ListView
           style={styles.list}
           dataSource={this.state.dataSource}
-          renderRow={this._renderRow}
-          />
+          renderRow={this.renderRow}
+        />
       </View>
     );
   }
