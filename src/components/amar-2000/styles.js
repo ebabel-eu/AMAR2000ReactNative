@@ -30,7 +30,4 @@ export default StyleSheet.create({
     marginBottom: _.SIZE * 2,
     color: _.COLOURS.TEXT.DARKER,
   },
-  list: {
-    marginBottom: _.SIZE * 3,
-  },
 });

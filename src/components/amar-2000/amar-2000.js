@@ -40,7 +40,6 @@ export default class AMAR2000ReactNative extends React.Component {
           </Text>
         </View>
         <ListView
-          style={styles.list}
           dataSource={this.state.dataSource}
           renderRow={this.renderRow}
         />
