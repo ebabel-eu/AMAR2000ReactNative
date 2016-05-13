@@ -1,6 +1,10 @@
 // Base size for fonts and spacings.
 export const SIZE = 16;
 
+export const WEIGHT = {
+  BOLD: '500',
+};
+
 // Hard coded rooms where Netatmo devices are placed.
 // todo: get this data from web api (not in this constants file of course).
 export const ROOMS = [
@@ -22,5 +26,11 @@ export const COLOURS = {
     DARK: '#595955',
     DARKER: '#393933',
     DARKEST: '#191911',
+  },
+  BORDER: '#cdcdcd',
+  BLACK: '#221100',
+  WHITE: '#ffeedd',
+  BUTTON: {
+    ACTIVE: '#B5B5B5',
   },
 };

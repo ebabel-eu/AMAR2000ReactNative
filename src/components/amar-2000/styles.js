@@ -7,7 +7,6 @@ import * as _ from '../../constants';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
     paddingTop: _.SIZE * 2,
     backgroundColor: _.COLOURS.BACKGROUND.LIGHT,
   },
@@ -32,16 +31,6 @@ export default StyleSheet.create({
     color: _.COLOURS.TEXT.DARKER,
   },
   list: {
-    flex: 1,
-    flexDirection: 'row',
     marginBottom: _.SIZE * 3,
-  },
-  item: {
-    flex: 1,
-    flexDirection: 'row',
-    backgroundColor: _.COLOURS.BACKGROUND.DARK,
-    padding: _.SIZE / 3,
-    marginBottom: 10,
-    color: _.COLOURS.TEXT.LIGHT,
   },
 });

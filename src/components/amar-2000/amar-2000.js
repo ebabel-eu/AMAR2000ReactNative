@@ -1,17 +1,18 @@
-import React, {
-  Component,
-} from 'react';
-
+import React from 'react';
 import {
   Text,
   View,
   ListView,
+  Navigator,
+  ScrollView,
+  TouchableHighlight,
 } from 'react-native';
 
-import styles from './styles';
 import * as _ from '../../constants';
+import NavButton from '../nav-button/nav-button';
+import styles from './styles';
 
-export default class AMAR2000ReactNative extends Component {
+export default class AMAR2000ReactNative extends React.Component {
   componentWillMount() {
     const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
     const dataSource = ds.cloneWithRows(_.ROOMS);
@@ -23,11 +24,7 @@ export default class AMAR2000ReactNative extends Component {
 
   renderRow(rowData) {
     return (
-      <Text
-        style={styles.item}
-      >
-        {rowData}
-      </Text>
+      <NavButton text={rowData} />
     );
   }
 
