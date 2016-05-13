@@ -4,6 +4,11 @@ iOS and Android app to monitor the environment data of an office and alerts when
 
 ## Install
 
+```
+npm install react-native-cli -g
+npm install
+```
+
 ### iOS
 
 - Open ./ios/AMAR2000ReactNative.xcodeproj with XCode
