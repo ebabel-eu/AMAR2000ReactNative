@@ -2,7 +2,9 @@
 export const SIZE = 16;
 
 export const WEIGHT = {
-  BOLD: '500',
+  LIGHT: '200',
+  NORMAL: '400',
+  BOLD: '600',
 };
 
 // Hard coded rooms where Netatmo devices are placed.

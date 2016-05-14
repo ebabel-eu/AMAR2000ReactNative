@@ -18,6 +18,7 @@ export default StyleSheet.create({
     textAlignVertical: 'center',
     padding: _.SIZE / 2,
     color: _.COLOURS.TEXT.DARK,
+    fontWeight: _.WEIGHT.BOLD,
   },
   slogan: {
     flex: 1,
@@ -29,5 +30,6 @@ export default StyleSheet.create({
     padding: _.SIZE / 2,
     marginBottom: _.SIZE * 2,
     color: _.COLOURS.TEXT.DARKER,
+    fontWeight: _.WEIGHT.LIGHT,
   },
 });

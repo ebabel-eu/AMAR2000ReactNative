@@ -2,32 +2,13 @@ import React from 'react';
 import {
   Text,
   View,
-  ListView,
-  Navigator,
-  ScrollView,
-  TouchableHighlight,
 } from 'react-native';
 
 import * as _ from '../../constants';
-import NavButton from '../nav-button/nav-button';
+import NavMenu from '../nav-menu/nav-menu';
 import styles from './styles';
 
 export default class AMAR2000ReactNative extends React.Component {
-  componentWillMount() {
-    const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
-    const dataSource = ds.cloneWithRows(_.ROOMS);
-
-    this.setState({
-      dataSource,
-    });
-  }
-
-  renderRow(rowData) {
-    return (
-      <NavButton text={rowData} />
-    );
-  }
-
   render() {
     return (
       <View style={styles.container}>
@@ -39,10 +20,7 @@ export default class AMAR2000ReactNative extends React.Component {
             everything is okay
           </Text>
         </View>
-        <ListView
-          dataSource={this.state.dataSource}
-          renderRow={this.renderRow}
-        />
+        <NavMenu message="Office overview" />
       </View>
     );
   }
