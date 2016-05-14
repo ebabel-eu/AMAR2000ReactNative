@@ -7,7 +7,7 @@ import * as _ from '../../constants';
 export default StyleSheet.create({
   button: {
     backgroundColor: _.COLOURS.WHITE,
-    padding: _.SIZE,
+    padding: _.SIZE * 1.5,
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: _.COLOURS.BORDER,
   },
