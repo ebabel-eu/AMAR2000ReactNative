@@ -4,7 +4,6 @@ import {
   View,
 } from 'react-native';
 
-import * as _ from '../../constants';
 import NavMenu from '../nav-menu/nav-menu';
 import styles from './styles';
 
