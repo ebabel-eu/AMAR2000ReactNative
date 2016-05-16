@@ -30,7 +30,7 @@ export default class NavMenu extends React.Component {
   render() {
     return (
       <ScrollView style={styles.scene}>
-        <Text style={styles.messageText}>{this.props.message}</Text>
+        <Text style={styles.name}>{this.props.name}</Text>
         {navButtons}
       </ScrollView>
     );

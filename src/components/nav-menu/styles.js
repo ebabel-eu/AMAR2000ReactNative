@@ -12,7 +12,7 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: _.COLOURS.BACKGROUND.DARK,
   },
-  messageText: {
+  name: {
     fontSize: _.SIZE * 1.5,
     fontWeight: _.WEIGHT.NORMAL,
     padding: _.SIZE,

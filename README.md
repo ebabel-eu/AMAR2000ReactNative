@@ -33,6 +33,22 @@ Alternative to see changes automatically: in Cmd Ctrl Z, enable Live Reload.
 
 To be defined later.
 
+## Components tree
+
+### iOS
+
+ [ index.ios ] => [ amar-2000 ] => [ routing ] => [ nav-menu ]
+                        ^                              ^
+                     [ logo ]                    [ nav-button ]
+                    [ slogan ]                      [ data ]
+
+### Android
+
+ [ index.android ] => [ amar-2000 ] => [ routing ] => [ nav-menu ]
+                            ^                              ^
+                         [ logo ]                    [ nav-button ]
+                        [ slogan ]                      [ data ]
+
 ## Team
 
 - Nadjib Amar (React Native developer)

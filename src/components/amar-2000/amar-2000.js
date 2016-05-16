@@ -1,10 +1,11 @@
 import React from 'react';
 import {
-  Text,
   View,
 } from 'react-native';
 
-import NavMenu from '../nav-menu/nav-menu';
+import Logo from './logo/logo';
+import Slogan from './slogan/slogan';
+import Routing from '../routing/routing';
 import styles from './styles';
 
 export default class AMAR2000ReactNative extends React.Component {
@@ -12,14 +13,10 @@ export default class AMAR2000ReactNative extends React.Component {
     return (
       <View style={styles.container}>
         <View>
-          <Text style={styles.logo}>
-            AMAR2000
-          </Text>
-          <Text style={styles.slogan}>
-            everything is okay
-          </Text>
+          <Logo text="AMAR2000" />
+          <Slogan text="everything is okay" />
         </View>
-        <NavMenu message="Office overview" />
+        <Routing />
       </View>
     );
   }
