@@ -37,17 +37,21 @@ To be defined later.
 
 ### iOS
 
- [ index.ios ] => [ amar-2000 ] => [ routing ] => [ nav-menu ]
-                        ^                              ^
-                     [ logo ]                    [ nav-button ]
-                    [ slogan ]                      [ data ]
+```
+[ index.ios ] => [ amar-2000 ] => [ routing ] => [ nav-menu ]
+                       ^                              ^
+                    [ logo ]                    [ nav-button ]
+                   [ slogan ]                      [ data ]
+```
 
 ### Android
 
- [ index.android ] => [ amar-2000 ] => [ routing ] => [ nav-menu ]
-                            ^                              ^
-                         [ logo ]                    [ nav-button ]
-                        [ slogan ]                      [ data ]
+```
+[ index.android ] => [ amar-2000 ] => [ routing ] => [ nav-menu ]
+                           ^                              ^
+                        [ logo ]                    [ nav-button ]
+                       [ slogan ]                      [ data ]
+```
 
 ## Team
 
